@@ -21,6 +21,6 @@ const userSchema = new Schema({
         required: true,
         enum: ["male", "female"]
     }
-});
+}, { timestamps: true });
 const User = model("User", userSchema);
 export default User;
